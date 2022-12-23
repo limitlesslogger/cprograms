@@ -5,13 +5,7 @@ int main(void)
     int s,flag=0;
     printf("enter size of array: ");
     scanf("%d",&s);
-    int i,j,cnt=s-1;
-    char a[s];
-    char b[s];
-    int k=0;
-    printf("\nenter array:  ");
-    scanf("%s",a);
-    printf("\narray is : %s",a);
+    
 
     // for (i=s-1;i>=0;i--)
     // {    
