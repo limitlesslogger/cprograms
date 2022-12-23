@@ -24,7 +24,7 @@ int main(void)
         }
         printf("\n");
     }
-    int si,sum,i3;
+    int si,sum,i3,j3;
     printf("enter size of array: ");
     scanf("%d",&si);
     int ar[si][si],i2,j2;
@@ -33,7 +33,7 @@ int main(void)
         for (j2=0;j2<si;j2++)
         {
             printf("enter element: ");
-            scanf("%d",&a[i2][j2]);
+            scanf("%d",&ar[i2][j2]);
         }
         printf("\n");
     } 
@@ -42,14 +42,19 @@ int main(void)
     {
         for (j2=0;j2<si;j2++)
         {
-            printf("\t%d",a[i2][j2]);
+            printf("\t%d",ar[i2][j2]);
         }
         printf("\n");
     }
+    printf("sum is:\n");
     for (i3=0;i3<s;i3++)
     {
-        sum=a[i3]+ar[i3];
-        printf("%d",sum);
+        for(j3=0;j3<s;j3++)
+        {
+        sum=(a[i3][j3]) + (ar[i3][j3]);
+        printf("\t%d",sum);
+        }
+        printf("\n");
     }
     return EXIT_SUCCESS;
 }
