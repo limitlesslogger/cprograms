@@ -24,7 +24,7 @@ int main(void)
     {
         if (a[cnt]==a[i])
         {
-            cnt=cnt-1;
+            cnt=cnt-1;//comment 
         }
         else
         {
